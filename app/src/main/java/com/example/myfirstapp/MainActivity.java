@@ -92,6 +92,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onRestart() {
+        super.onRestart();
+
+    }
+
+    @Override
     protected void onDestroy() {
         super.onDestroy();
         Log.w("onDestory", "oh noes! app has been destroyed!");
